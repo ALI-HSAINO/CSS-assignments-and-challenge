@@ -1,0 +1,14 @@
+body{
+    background-color: #a7a7a7;
+}
+div{
+    width: fit-content;
+    max-width: 400px;
+    max-height: 25px;
+    background-color: brown;
+    margin: 20px;
+    padding: 5px;
+    display: block;
+    color: white;
+    overflow: hidden;
+}

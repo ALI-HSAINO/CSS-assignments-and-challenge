@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+}
+div.shape-1{
+    border: solid orange 5px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+div.shape-1 p{
+    border: inherit;
+    padding: inherit;
+    background-color: #eee;
+}
+div.shape-2{
+    border: solid green 5px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;  
+}
+div.shape-2 p{
+    border: inherit;
+    padding: inherit;
+    background-color: #eee;
+}

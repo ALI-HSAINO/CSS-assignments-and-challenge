@@ -1,0 +1,22 @@
+div {
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #eeeeee;
+  border: solid 5px;
+
+  border-image: linear-gradient(
+    to right,
+    #f44336 0%,
+    #f44336 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    #4caf50 40%,
+    #4caf50 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #683bb8 80%,
+    #683bb8 100%
+  )1;
+}

@@ -1,0 +1,22 @@
+div{
+    margin: 0 auto;
+    visibility: hidden;
+    position: relative;
+}
+div::after{
+    content: "Elzero";
+    visibility: visible;
+    background-color: #eee !important; 
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center;
+    border: none  !important;
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+}

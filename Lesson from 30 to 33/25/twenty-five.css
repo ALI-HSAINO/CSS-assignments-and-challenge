@@ -1,0 +1,41 @@
+div{
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px;
+    border-color: red blue;
+}
+.top-left{
+    position: absolute;
+    top: -15px;
+    left: -16px;
+    padding: 5px 10px;
+    background: blue;
+    border-right: solid red 2px;
+}
+.bottom-left{
+    position: absolute;
+    bottom: -15px;
+    left: -16px;
+    padding: 5px 10px;
+    background: blue;
+    border-right: solid red 2px;
+}
+.top-right{
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    padding: 5px 10px;
+    background: blue;
+    border-left: solid red 2px;
+}
+.bottom-right{
+    position: absolute;
+    bottom: -15px;
+    right: -16px;
+    padding: 5px 10px;
+    background: blue;
+    border-left: solid red 2px;
+}

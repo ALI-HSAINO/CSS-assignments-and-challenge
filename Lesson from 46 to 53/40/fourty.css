@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  color: white;
+}
+.six {
+  order: 1;
+  line-height: 120px;
+}
+.three {
+  order: 2;
+  align-self: flex-start;
+}
+.four {
+  order: 3;
+  line-height: 120px;
+}
+.five {
+  order: 4;
+  line-height: 120px;
+}
+.two {
+  order: 5;
+  line-height: 120px;
+}
+.one {
+  order: 6;
+  align-self: flex-end;
+}
+.six,
+.three,
+.four,
+.five,
+.two,
+.one {
+  padding: 10px;
+  background-color: #607d8b;
+  width: 180px;
+}

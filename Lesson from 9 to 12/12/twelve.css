@@ -1,0 +1,18 @@
+div{
+    width: 400px;
+    background-color: #EEEEEE;
+    margin: 20px;
+}
+.shape-1 p{
+    border-left: solid #E91E63 5px;
+    outline: solid #EEEEEE 5px;
+    padding: 10px;
+}
+.shape-2{
+    visibility: hidden;
+}
+.shape-3 p{
+    border-left: solid #009688 5px;
+    outline: solid #EEEEEE 5px;
+    padding: 10px;
+}

@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.html,
+.css,
+.js{
+    background-color: #eee;
+    list-style: none;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+.html ol li{
+background-color: white;
+margin: 5px;
+padding: 5px;
+}
+.css ol li{
+    background-color: white;
+    margin: 5px;
+    padding: 5px; 
+}
+.js ul{
+    padding-left: 0px;
+}
+.js ul li{
+    background-color: white;
+    margin: 5px;
+    padding: 5px; 
+    list-style-position: inside;
+}

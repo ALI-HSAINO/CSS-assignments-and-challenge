@@ -1,0 +1,38 @@
+.shape{
+    width: 1000px;
+    background-color: #EEEEEE;
+    text-align: center;
+    margin: 0px auto;
+    height: 312px;
+}
+.full{
+    width: calc(100% - 30px);
+    background-color: #DDDDDD;
+    margin: 15px;
+    padding: 15px 0px;
+    float: left;
+}
+.three{
+    width: calc((100% - 90px)/3);
+    background-color: #DDDDDD;
+    margin: 15px;
+    padding: 15px 0px;
+    float: left;
+}
+.two{
+    width: calc((100% - 60px)/2);
+    background-color: #DDDDDD;
+    margin: 15px;
+    padding: 15px 0px;
+    float: left;
+}
+.four{
+    width: calc((100% - 120px)/4);
+    background-color: #DDDDDD;
+    margin: 15px;
+    padding: 15px 0px;
+    float: left;  
+}
+.clear{
+    clear: both;
+}

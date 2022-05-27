@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0px;
+}
+:root{
+  --back-color: #DDDDDD;
+  --main-padding:10px;
+  --main-margin:15px;
+}
+.page{
+  background-color: #eeeeee;
+  padding: var(--main-padding);
+}
+.header{
+  display: flex;
+  align-items: center;
+}
+.header .logo{
+  background-color: var(--back-color);
+  padding: var(--main-padding);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .links{
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--back-color);
+  flex: 1;
+  padding: var(--main-padding);
+  margin-left: var(--main-margin);
+}
+.header .links li{
+margin-right: 10px;
+}
+.main-area{
+  display: flex;
+  margin-top: var(--main-margin);
+  height: 300px;
+}
+.main-area .content{
+  padding: var(--main-padding);
+  background-color: var(--back-color);
+  width: 70%;
+}
+.main-area .sidebar{
+  padding: var(--main-padding);
+  background-color: var(--back-color);
+  margin-left: var(--main-margin);
+  flex: 1;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--main-margin);
+  background-color: var(--back-color);
+  padding: var(--main-padding);
+}

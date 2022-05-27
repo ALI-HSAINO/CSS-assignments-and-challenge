@@ -1,0 +1,70 @@
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, calc(760px/3));
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-rows: 50px 330px;
+}
+.grid div{
+  background-color: #607D8B;
+  position: relative;
+}
+.grid div:first-child::before{
+  content: "ELEMENT 1";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}
+.grid div:nth-child(2)::before{
+  content: "ELEMENT 2";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}
+.grid div:nth-child(3)::before{
+  content: "ELEMENT 3";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}
+.grid div:nth-child(4)::before{
+  content: "ELEMENT 4";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}
+.grid div:nth-child(5)::before{
+  content: "ELEMENT 5";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}
+.grid div:nth-child(6)::before{
+  content: "ELEMENT 6";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: white;
+}

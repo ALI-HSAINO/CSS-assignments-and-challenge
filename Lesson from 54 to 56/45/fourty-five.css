@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+}
+input {
+  outline: none;
+  height: 60px;
+  background-color: #eeeeee;
+  width: 600px;
+  caret-color: #f54437;
+  margin-bottom: 20px;
+  border-bottom: solid 3px;
+  border-image: linear-gradient(
+      to right,
+      #f44336 0%,
+      #f44336 50%,
+      #009688 50%,
+      #009688 100%
+    )
+    1;
+  font-size: 20px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
