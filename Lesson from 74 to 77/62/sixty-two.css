@@ -1,0 +1,122 @@
+:root {
+  --main-color: #323234;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shape {
+  padding: 20px;
+  background-color: #eeeeee;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(9, 50px);
+}
+.shape .a {
+  grid-area: 1/1/1/5;
+  background-color: var(--main-color);
+}
+.shape .b {
+  grid-area: 2/1/9/2;
+  background-color: var(--main-color);
+}
+.shape .c {
+  grid-area: 5/2/5/5;
+  background-color: var(--main-color);
+}
+.shape .d {
+  grid-area: 9/1/9/5;
+  background-color: var(--main-color);
+}
+.shape .e {
+  grid-area: 1/6/9/7;
+  background-color: var(--main-color);
+}
+.shape .f {
+  grid-area: 9/6/9/10;
+  background-color: var(--main-color);
+}
+.shape::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #fea604;
+  position: absolute;
+  left: 170px;
+  top: 25px;
+  animation-name: square-1;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  animation-timing-function: linear;
+}
+.shape::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #fea604;
+  position: absolute;
+  left: 420px;
+  top: 425px;
+  animation-name: square-2;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes square-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-145px, 0);
+  }
+  20% {
+    transform: translate(-145px, 200px);
+  }
+  30% {
+    transform: translate(0px, 200px);
+  }
+  40% {
+    transform: translate(-145px, 200px);
+  }
+  50% {
+    transform: translate(-145px, 400px);
+  }
+  60% {
+    transform: translate(0, 400px);
+  }
+  70% {
+    transform: translate(-145px, 400px);
+  }
+  90% {
+    transform: translate(-145px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes square-2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-145px,0);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-145px,-400px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-145px,-400px);
+    opacity: 0;
+  }
+}

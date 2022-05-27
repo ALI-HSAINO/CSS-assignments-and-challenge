@@ -1,0 +1,41 @@
+:root{
+    --main-color:#009688;
+}
+h1{
+    width: 150px;
+    margin: 100px auto;
+    height: 100px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+h1::after{
+content: "";
+position: absolute;
+width: 150px;
+margin: 100px auto;
+height: 107px;
+background-color: #ffffff;
+transform: skew(
+10deg
+, 
+10deg
+);
+top: -113px;
+left: -139px;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 20px;
+    height: 100px;
+    left: -17px;
+    z-index: 1;
+    transform: skew(
+10deg
+, 
+0deg)}

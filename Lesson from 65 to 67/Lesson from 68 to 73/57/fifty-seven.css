@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+div::before{
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FA3664;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backface-visibility: hidden;
+}
+div::after{
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    background-color: #1692FC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+div:hover{
+    transform: rotateY(180deg);
+}

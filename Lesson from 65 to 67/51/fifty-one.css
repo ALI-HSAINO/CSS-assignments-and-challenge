@@ -1,0 +1,31 @@
+div{
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    font-size: 80px;
+    color: #03A9F4;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: solid 1px #a3a3a3;
+}
+div::after{
+content: "";
+width: 305px;
+height: 210px;
+position: absolute;
+background-color: #03A9F4;
+transform: rotate(-5deg);
+z-index: -1;
+}
+div::before{
+content: "";
+width: 305px;
+height: 210px;
+position: absolute;
+background-color: #E91E63;
+transform: rotate(5deg);
+z-index: -2;
+}

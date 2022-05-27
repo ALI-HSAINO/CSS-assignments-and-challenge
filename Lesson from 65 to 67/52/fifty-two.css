@@ -1,0 +1,94 @@
+div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #eeeeee;
+  margin: 100px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: solid #e91e63 10px;
+  border-radius: 50%;
+  border-left: solid transparent 10px;
+  transition: 0.5s;
+}
+div::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: solid #2196f3 10px;
+  border-radius: 50%;
+  border-right: solid transparent 10px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+div:hover::after{
+  transform: rotate(1turn);
+}
+div:hover::before{
+  transform: rotate(1turn);
+}
+
+/* ! */
+/* div:hover::after {
+  animation-name: around;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+div:hover::before {
+  animation-name: around-1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} */
+/* @keyframes around {
+  0% {
+    transform: rotate(0turn);
+  }
+  30% {
+    transform: rotate(1turn);
+  }
+  30% {
+    border-radius: 0%;
+  }
+  95% {
+    border-radius: 0%;
+  }
+  60% {
+    transform: translateX(200px);
+  }
+  100% {
+    border-color: #2196f3;
+    border-left: solid 1px transparent;
+  }
+}
+@keyframes around-1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  30% {
+    transform: rotate(1turn);
+  }
+  30% {
+    border-radius: 0%;
+  }
+  95% {
+    border-radius: 0%;
+  }
+  60% {
+    transform: translateX(-200px);
+  }
+  100% {
+    border-color: #e91e63;
+    border-right: solid 1px transparent;
+  }
+} */

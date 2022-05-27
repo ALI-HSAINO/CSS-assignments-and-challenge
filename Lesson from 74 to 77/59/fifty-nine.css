@@ -1,0 +1,53 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 50px;
+    height: 50px;
+    border: solid 5px #E20B57;
+    border-radius: 50%;
+    border-right: solid 5px transparent;
+    position: relative;
+    transition: 10s;
+    animation-name: around;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+div::before{
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border: solid 5px #1593DC;
+    border-radius: 50%;
+    border-left: solid 5px transparent;
+    top: -25%;
+    left: -25%;
+}
+div::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: solid 5px #FCA500;
+    border-radius: 50%;
+    border-top: solid 5px transparent;
+    top: -40%;
+    left: -40%;
+}
+div:hover{
+    animation-name: around;
+    animation-play-state:paused
+}
+@keyframes around {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
